@@ -70,8 +70,7 @@ limitations under the License.
         };
         // create a CastMessageBus to handle messages for a custom namespace
         window.messageBus =
-          window.castReceiverManager.getCastMessageBus(
-              'urn:x-cast:com.moosader.cast.happythings');
+          window.castReceiverManager.getCastMessageBus('Setup your own namespace at https://cast.google.com/publish/');
         // handler for the CastMessageBus message event
         window.messageBus.onMessage = function(event) {
           console.log('Message [' + event.senderId + ']: ' + event.data);
